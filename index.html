@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GLOBAL GYM Patna | Unleash Your Ultimate Strength</title>
+    <meta name="description" content="Welcome to GLOBAL GYM, Bahadurpur, Patna. Rated 4.5★ with 756+ reviews. State-of-the-art strength training, cardio, and certified personal trainers. Claim your free trial today!">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,11 +19,11 @@
                         'primary-hover': '#FF2A40',
                         secondary: '#FFB703',
                         textPrimary: '#F8F9FA',
-                        textMuted: '#94A3B8',
+                        textMuted: '#94A3B8'
                     },
                     fontFamily: {
-                        syne: ['Syne', 'sans-serif'],
-                        inter: ['Inter', 'sans-serif'],
+                        heading: ['Syne', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
                     }
                 }
             }
@@ -32,7 +33,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -46,362 +47,321 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Syne', sans-serif;
         }
-        .glow-red {
-            box-shadow: 0 0 40px -10px rgba(230, 57, 70, 0.3);
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(230, 57, 70, 0.25);
         }
-        .glow-yellow {
-            box-shadow: 0 0 30px -10px rgba(255, 183, 3, 0.2);
-        }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0B0F19;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #161B22;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #E63946;
+        .glow-effect-sm {
+            box-shadow: 0 0 20px rgba(230, 57, 70, 0.3);
         }
     </style>
 </head>
 <body class="overflow-x-hidden pb-24 md:pb-0">
 
-    <!-- Announcement Bar -->
-    <div class="bg-primary text-white text-xs sm:text-sm font-medium py-2 px-4 text-center relative z-50 flex items-center justify-center gap-2">
-        <i data-lucide="clock" class="w-4 h-4 shrink-0"></i>
-        <span>Open Today: 5:30 AM – 9:00 PM • Located near Shiv-Kali Mandir, Bahadurpur, Patna</span>
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-primary via-red-600 to-amber-500 text-white text-xs sm:text-sm font-medium py-2 px-4 text-center relative z-50 flex items-center justify-center gap-2">
+        <i data-lucide="clock" class="w-4 h-4 animate-pulse"></i>
+        <span>Open Today: 5:30 AM – 9:00 PM | Near Shiv-Kali Mandir, Bahadurpur, Patna</span>
     </div>
 
     <!-- Sticky Header -->
-    <header class="sticky top-0 z-40 backdrop-blur-md bg-[#0B0F19]/90 border-b border-zinc-800/80 transition-all duration-300">
+    <header class="sticky top-0 z-40 backdrop-blur-md bg-[#0B0F19]/90 border-b border-zinc-800">
         <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            
-            <!-- Logo -->
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-syne font-black text-xl shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform">
-                    G
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center font-heading font-extrabold text-xl text-white glow-effect-sm group-hover:scale-105 transition-transform">
+                    GG
                 </div>
                 <div class="flex flex-col">
-                    <span class="font-syne font-extrabold text-xl tracking-wider text-white">GLOBAL <span class="text-primary">GYM</span></span>
-                    <span class="text-[10px] text-textMuted uppercase tracking-widest font-semibold">Patna</span>
+                    <span class="font-heading font-extrabold text-xl sm:text-2xl tracking-wider text-white">GLOBAL <span class="text-primary">GYM</span></span>
+                    <span class="text-[10px] tracking-widest text-textMuted uppercase -mt-1">Patna</span>
                 </div>
             </a>
 
             <!-- Desktop Nav Links -->
-            <nav class="hidden lg:flex items-center gap-8">
-                <a href="#services" class="text-sm font-medium text-textMuted hover:text-white transition-colors">Programs</a>
-                <a href="#why-us" class="text-sm font-medium text-textMuted hover:text-white transition-colors">Why Us</a>
-                <a href="#about" class="text-sm font-medium text-textMuted hover:text-white transition-colors">About</a>
-                <a href="#gallery" class="text-sm font-medium text-textMuted hover:text-white transition-colors">Gallery</a>
-                <a href="#reviews" class="text-sm font-medium text-textMuted hover:text-white transition-colors">Reviews</a>
-                <a href="#faq" class="text-sm font-medium text-textMuted hover:text-white transition-colors">FAQ</a>
-                <a href="#contact" class="text-sm font-medium text-textMuted hover:text-white transition-colors">Contact</a>
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-textMuted">
+                <a href="#services" class="hover:text-white transition-colors">Programs</a>
+                <a href="#about" class="hover:text-white transition-colors">About Us</a>
+                <a href="#gallery" class="hover:text-white transition-colors">Gallery</a>
+                <a href="#reviews" class="hover:text-white transition-colors">Reviews</a>
+                <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+                <a href="#contact" class="hover:text-white transition-colors">Location</a>
             </nav>
 
-            <!-- Action CTAs -->
+            <!-- Desktop Action Buttons -->
             <div class="hidden sm:flex items-center gap-3">
-                <a href="tel:+919955542052" class="h-11 px-4 rounded-xl border border-zinc-800 bg-surface hover:bg-zinc-800/80 text-white font-medium flex items-center gap-2 text-sm transition-all">
+                <a href="tel:+919955542052" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-zinc-900 border border-zinc-800 text-white text-sm font-semibold hover:border-primary transition-all">
                     <i data-lucide="phone" class="w-4 h-4 text-primary"></i>
-                    <span>Call Now</span>
+                    <span>+91 99555 42052</span>
                 </a>
-                <a href="https://wa.me/919955542052?text=Hi%20Global%20Gym,%20I%20want%20to%20know%20more%20about%20memberships." target="_blank" rel="noopener" class="h-11 px-5 rounded-xl bg-primary hover:bg-primary-hover text-white font-semibold flex items-center gap-2 text-sm shadow-lg shadow-primary/20 transition-all hover:scale-105">
-                    <i data-lucide="message-square" class="w-4 h-4"></i>
-                    <span>WhatsApp</span>
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-primary hover:bg-primary-hover text-white text-sm font-bold glow-effect-sm transition-all transform hover:scale-105">
+                    Free Trial
                 </a>
             </div>
 
             <!-- Mobile Hamburger Button -->
-            <button id="menu-toggle" aria-label="Toggle Navigation Menu" class="lg:hidden p-2 rounded-xl bg-surface border border-zinc-800 text-white focus:outline-none">
+            <button id="menu-toggle" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-xl bg-surface border border-zinc-800 text-white hover:text-primary transition-colors">
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </div>
 
-        <!-- Mobile Menu Drawer -->
-        <div id="mobile-menu" class="lg:hidden hidden absolute top-full left-0 w-full bg-surface border-b border-zinc-800 px-6 py-6 flex flex-col gap-4 shadow-2xl backdrop-blur-xl">
-            <a href="#services" class="mobile-link text-lg font-medium text-textMuted hover:text-white py-2 border-b border-zinc-800/50">Programs</a>
-            <a href="#why-us" class="mobile-link text-lg font-medium text-textMuted hover:text-white py-2 border-b border-zinc-800/50">Why Us</a>
-            <a href="#about" class="mobile-link text-lg font-medium text-textMuted hover:text-white py-2 border-b border-zinc-800/50">About</a>
-            <a href="#gallery" class="mobile-link text-lg font-medium text-textMuted hover:text-white py-2 border-b border-zinc-800/50">Gallery</a>
-            <a href="#reviews" class="mobile-link text-lg font-medium text-textMuted hover:text-white py-2 border-b border-zinc-800/50">Reviews</a>
-            <a href="#faq" class="mobile-link text-lg font-medium text-textMuted hover:text-white py-2 border-b border-zinc-800/50">FAQ</a>
-            <a href="#contact" class="mobile-link text-lg font-medium text-textMuted hover:text-white py-2">Contact</a>
+        <!-- Mobile Slide-out Menu -->
+        <div id="mobile-menu" class="lg:hidden fixed inset-x-0 top-20 bg-surface/95 backdrop-blur-xl border-b border-zinc-800 p-6 flex flex-col gap-4 transform -translate-y-full opacity-0 pointer-events-none transition-all duration-300 z-50">
+            <a href="#services" class="mobile-nav-link text-lg font-medium text-textPrimary py-2 border-b border-zinc-800">Programs</a>
+            <a href="#about" class="mobile-nav-link text-lg font-medium text-textPrimary py-2 border-b border-zinc-800">About Us</a>
+            <a href="#gallery" class="mobile-nav-link text-lg font-medium text-textPrimary py-2 border-b border-zinc-800">Gallery</a>
+            <a href="#reviews" class="mobile-nav-link text-lg font-medium text-textPrimary py-2 border-b border-zinc-800">Reviews</a>
+            <a href="#faq" class="mobile-nav-link text-lg font-medium text-textPrimary py-2 border-b border-zinc-800">FAQ</a>
+            <a href="#contact" class="mobile-nav-link text-lg font-medium text-textPrimary py-2">Location & Contact</a>
             <div class="flex flex-col gap-3 pt-4">
-                <a href="tel:+919955542052" class="h-12 rounded-xl border border-zinc-800 bg-zinc-900 text-white font-semibold flex items-center justify-center gap-2 text-base">
-                    <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
-                    <span>Call +91 99555 42052</span>
+                <a href="https://wa.me/919955542052?text=Hi,%20I%20want%20to%20know%20more%20about%20Global%20Gym%20membership." target="_blank" class="w-full py-3.5 rounded-xl bg-emerald-600 text-white font-bold flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp Inquiry
                 </a>
-                <a href="https://wa.me/919955542052?text=Hi%20Global%20Gym,%20I%20want%20to%20know%20more%20about%20memberships." target="_blank" rel="noopener" class="h-12 rounded-xl bg-primary text-white font-semibold flex items-center justify-center gap-2 text-base shadow-lg shadow-primary/30">
-                    <i data-lucide="message-square" class="w-5 h-5"></i>
-                    <span>Chat on WhatsApp</span>
+                <a href="tel:+919955542052" class="w-full py-3.5 rounded-xl bg-primary text-white font-bold flex items-center justify-center gap-2">
+                    <i data-lucide="phone" class="w-5 h-5"></i> Call Now
                 </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[90vh] flex items-center justify-center pt-12 pb-20 overflow-hidden">
-        <!-- Background Glows & Image Overlay -->
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80" alt="Global Gym Interior" class="w-full h-full object-cover opacity-20 scale-105">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-[#0B0F19]/80 to-transparent"></div>
-            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-primary/15 rounded-full blur-[120px] pointer-events-none"></div>
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-16 lg:py-24">
+        <!-- Background Gradient and Glows -->
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80" alt="Gym Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background"></div>
         </div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            
-            <!-- Trust Badge -->
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface border border-zinc-800 mb-8 glow-yellow">
-                <div class="flex text-secondary">
-                    <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
+            <!-- Rating Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface border border-zinc-800 mb-6 glow-effect-sm">
+                <div class="flex text-amber-400">
+                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                 </div>
-                <span class="text-xs sm:text-sm font-semibold text-white">4.5 Rating from 756+ Google Reviews</span>
+                <span class="text-sm font-semibold text-white">4.5★ <span class="text-textMuted font-normal">(756+ Google Reviews)</span></span>
             </div>
 
-            <!-- Main Title -->
-            <h1 class="font-syne font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-white mb-6 leading-[1.1] max-w-5xl mx-auto">
+            <!-- Main Heading -->
+            <h1 class="font-heading font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tight text-white max-w-5xl mx-auto leading-tight sm:leading-none mb-6">
                 Unleash Your Ultimate Strength at <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-500 to-secondary">GLOBAL GYM</span> Patna
             </h1>
 
             <!-- Subtitle -->
-            <p class="text-base sm:text-xl text-textMuted max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
-                State-of-the-art equipment, certified expert trainers, and a high-energy community right at Bazaar Samiti Road, Bahadurpur. Your transformation starts here.
+            <p class="text-base sm:text-xl text-textMuted max-w-2xl mx-auto mb-10 leading-relaxed">
+                Transform your body with state-of-the-art equipment, elite certified trainers, and a high-energy fitness community right in Bahadurpur.
             </p>
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
-                <a href="#contact" class="w-full sm:w-auto h-14 px-8 rounded-xl bg-primary hover:bg-primary-hover text-white font-bold text-base flex items-center justify-center gap-3 shadow-xl shadow-primary/30 transition-all hover:scale-105">
-                    <i data-lucide="zap" class="w-5 h-5"></i>
-                    <span>Claim Free Trial</span>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary hover:bg-primary-hover text-white font-bold text-base flex items-center justify-center gap-3 glow-effect transition-all transform hover:scale-105 min-h-[48px]">
+                    <i data-lucide="zap" class="w-5 h-5"></i> Claim Free Trial
                 </a>
-                <a href="https://wa.me/919955542052?text=Hi%20Global%20Gym,%20I%20want%20to%20know%20membership%20details." target="_blank" rel="noopener" class="w-full sm:w-auto h-14 px-8 rounded-xl bg-surface border border-zinc-800 hover:bg-zinc-800 text-white font-bold text-base flex items-center justify-center gap-3 transition-all">
-                    <i data-lucide="message-square" class="w-5 h-5 text-emerald-400"></i>
-                    <span>Chat on WhatsApp</span>
+                <a href="https://wa.me/919955542052?text=Hi,%20I%20want%20to%20chat%20about%20gym%20membership%20at%20Global%20Gym%20Patna." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-base flex items-center justify-center gap-3 transition-all min-h-[48px]">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i> Chat on WhatsApp
                 </a>
             </div>
-
-            <!-- Quick Info Highlights -->
-            <div class="mt-16 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
-                <div class="p-4 rounded-xl bg-surface/60 border border-zinc-800/80 backdrop-blur-sm text-left">
-                    <div class="text-primary font-syne font-bold text-2xl mb-1">756+</div>
-                    <div class="text-xs text-textMuted">Verified Google Reviews</div>
-                </div>
-                <div class="p-4 rounded-xl bg-surface/60 border border-zinc-800/80 backdrop-blur-sm text-left">
-                    <div class="text-secondary font-syne font-bold text-2xl mb-1">5:30 AM</div>
-                    <div class="text-xs text-textMuted">Early Morning Opening</div>
-                </div>
-                <div class="col-span-2 md:col-span-1 p-4 rounded-xl bg-surface/60 border border-zinc-800/80 backdrop-blur-sm text-left">
-                    <div class="text-white font-syne font-bold text-2xl mb-1">Bahadurpur</div>
-                    <div class="text-xs text-textMuted">Prime Patna Location</div>
-                </div>
-            </div>
-
         </div>
     </section>
 
     <!-- Trust & Social Proof Bar -->
-    <section class="border-y border-zinc-800/80 bg-surface/30 py-8">
-        <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div class="flex flex-col items-center">
-                    <span class="font-syne font-bold text-3xl text-white mb-1">4.5 ★</span>
-                    <span class="text-xs text-textMuted uppercase tracking-wider font-semibold">Google Rating</span>
+    <section class="border-y border-zinc-800 bg-surface/50 backdrop-blur-md py-8">
+        <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="flex items-center justify-center gap-4 p-4 rounded-xl bg-zinc-900/50 border border-zinc-800/80">
+                <div class="p-3 rounded-lg bg-primary/10 text-primary">
+                    <i data-lucide="award" class="w-8 h-8"></i>
                 </div>
-                <div class="flex flex-col items-center">
-                    <span class="font-syne font-bold text-3xl text-primary mb-1">756+</span>
-                    <span class="text-xs text-textMuted uppercase tracking-wider font-semibold">Happy Members</span>
+                <div class="text-left">
+                    <h3 class="font-heading font-bold text-2xl text-white">756+</h3>
+                    <p class="text-sm text-textMuted">Verified Google Reviews (4.5★)</p>
                 </div>
-                <div class="flex flex-col items-center">
-                    <span class="font-syne font-bold text-3xl text-secondary mb-1">100%</span>
-                    <span class="text-xs text-textMuted uppercase tracking-wider font-semibold">Certified Trainers</span>
+            </div>
+            <div class="flex items-center justify-center gap-4 p-4 rounded-xl bg-zinc-900/50 border border-zinc-800/80">
+                <div class="p-3 rounded-lg bg-secondary/10 text-secondary">
+                    <i data-lucide="users" class="w-8 h-8"></i>
                 </div>
-                <div class="flex flex-col items-center">
-                    <span class="font-syne font-bold text-3xl text-white mb-1">15.5 Hrs</span>
-                    <span class="text-xs text-textMuted uppercase tracking-wider font-semibold">Daily Access</span>
+                <div class="text-left">
+                    <h3 class="font-heading font-bold text-2xl text-white">Certified</h3>
+                    <p class="text-sm text-textMuted">Expert Professional Trainers</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center gap-4 p-4 rounded-xl bg-zinc-900/50 border border-zinc-800/80">
+                <div class="p-3 rounded-lg bg-emerald-500/10 text-emerald-500">
+                    <i data-lucide="map-pin" class="w-8 h-8"></i>
+                </div>
+                <div class="text-left">
+                    <h3 class="font-heading font-bold text-2xl text-white">Prime Location</h3>
+                    <p class="text-sm text-textMuted">Bahadurpur, Patna</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services / Training Programs Grid -->
-    <section id="services" class="py-24 relative">
+    <section id="services" class="py-20 lg:py-28 relative">
         <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-primary font-bold text-xs uppercase tracking-widest bg-primary/10 px-3 py-1.5 rounded-full border border-primary/20">Elite Training Programs</span>
-                <h2 class="font-syne font-extrabold text-3xl sm:text-5xl text-white mt-4 mb-4">Built For Your Goals</h2>
-                <p class="text-textMuted text-base sm:text-lg">Whether you want to build raw muscle, shred fat, or increase stamina, we have the specialized equipment and professional guidance you need.</p>
+                <span class="text-primary font-semibold text-sm tracking-wider uppercase mb-3 block">Elite Programs</span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white mb-4">Designed For Maximum Results</h2>
+                <p class="text-textMuted text-base sm:text-lg">Whether your goal is muscle hypertrophy, fat loss, or total athletic conditioning, we have the right program for you.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Service 1 -->
-                <div class="group bg-surface rounded-2xl p-8 border border-zinc-800 hover:border-primary/50 transition-all duration-300 flex flex-col justify-between shadow-xl">
-                    <div>
-                        <div class="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
-                            <i data-lucide="dumbbell" class="w-7 h-7"></i>
-                        </div>
-                        <h3 class="font-syne font-bold text-2xl text-white mb-3">Strength & Muscle Training</h3>
-                        <p class="text-textMuted text-sm leading-relaxed mb-6">Heavy-duty power racks, olympic barbells, bumper plates, and comprehensive pin-loaded machines for maximum hypertrophy and strength gains.</p>
+                <!-- Program 1 -->
+                <div class="bg-surface rounded-2xl border border-zinc-800 overflow-hidden flex flex-col justify-between group hover:border-primary transition-all duration-300">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80" alt="Strength Training" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
                     </div>
-                    <a href="https://wa.me/919955542052?text=Hi,%20I%20want%20to%20know%20more%20about%20Strength%20Training." target="_blank" rel="noopener" class="w-full h-12 rounded-xl bg-zinc-900 border border-zinc-800 hover:bg-primary hover:border-primary text-white font-semibold text-sm flex items-center justify-center gap-2 transition-all">
-                        <span>Inquire on WhatsApp</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </a>
+                    <div class="p-6 sm:p-8 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                                <i data-lucide="dumbbell" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-2xl text-white mb-3">Strength & Conditioning</h3>
+                            <p class="text-textMuted text-sm leading-relaxed mb-6">Heavy-duty power racks, Olympic barbells, dumbbells, and plate-loaded machines built for serious muscle building.</p>
+                        </div>
+                        <a href="#contact" class="w-full py-3 rounded-xl bg-zinc-900 border border-zinc-800 text-white font-semibold text-center hover:bg-primary hover:border-primary transition-all min-h-[48px] flex items-center justify-center">
+                            Inquire Now
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="group bg-surface rounded-2xl p-8 border border-zinc-800 hover:border-primary/50 transition-all duration-300 flex flex-col justify-between shadow-xl">
-                    <div>
-                        <div class="w-14 h-14 rounded-xl bg-secondary/10 border border-secondary/20 flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-black transition-all">
-                            <i data-lucide="heart-pulse" class="w-7 h-7"></i>
-                        </div>
-                        <h3 class="font-syne font-bold text-2xl text-white mb-3">Cardio & Endurance</h3>
-                        <p class="text-textMuted text-sm leading-relaxed mb-6">Advanced treadmills, ellipticals, stationary bikes, and rowing machines designed to torch calories and elevate your cardiovascular endurance.</p>
+                <!-- Program 2 -->
+                <div class="bg-surface rounded-2xl border border-zinc-800 overflow-hidden flex flex-col justify-between group hover:border-primary transition-all duration-300">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Cardio & Fat Loss" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
                     </div>
-                    <a href="https://wa.me/919955542052?text=Hi,%20I%20want%20to%20know%20more%20about%20Cardio%20Programs." target="_blank" rel="noopener" class="w-full h-12 rounded-xl bg-zinc-900 border border-zinc-800 hover:bg-secondary hover:border-secondary hover:text-black text-white font-semibold text-sm flex items-center justify-center gap-2 transition-all">
-                        <span>Inquire on WhatsApp</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </a>
+                    <div class="p-6 sm:p-8 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center mb-4">
+                                <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-2xl text-white mb-3">Cardio & Fat Burning</h3>
+                            <p class="text-textMuted text-sm leading-relaxed mb-6">Advanced treadmills, ellipticals, and stationary bikes designed to elevate heart rate and accelerate fat loss.</p>
+                        </div>
+                        <a href="#contact" class="w-full py-3 rounded-xl bg-zinc-900 border border-zinc-800 text-white font-semibold text-center hover:bg-primary hover:border-primary transition-all min-h-[48px] flex items-center justify-center">
+                            Inquire Now
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="group bg-surface rounded-2xl p-8 border border-zinc-800 hover:border-primary/50 transition-all duration-300 flex flex-col justify-between shadow-xl">
-                    <div>
-                        <div class="w-14 h-14 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 mb-6 group-hover:bg-red-500 group-hover:text-white transition-all">
-                            <i data-lucide="user-check" class="w-7 h-7"></i>
-                        </div>
-                        <h3 class="font-syne font-bold text-2xl text-white mb-3">1-on-1 Personal Training</h3>
-                        <p class="text-textMuted text-sm leading-relaxed mb-6">Customized workout blueprints, strict form correction, and personalized nutrition planning with certified fitness coaches in Patna.</p>
+                <!-- Program 3 -->
+                <div class="bg-surface rounded-2xl border border-zinc-800 overflow-hidden flex flex-col justify-between group hover:border-primary transition-all duration-300">
+                    <div class="relative aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Personal Training" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
                     </div>
-                    <a href="https://wa.me/919955542052?text=Hi,%20I%20want%20to%20know%20more%20about%20Personal%20Training." target="_blank" rel="noopener" class="w-full h-12 rounded-xl bg-zinc-900 border border-zinc-800 hover:bg-primary hover:border-primary text-white font-semibold text-sm flex items-center justify-center gap-2 transition-all">
-                        <span>Inquire on WhatsApp</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </a>
+                    <div class="p-6 sm:p-8 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center mb-4">
+                                <i data-lucide="user-check" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-2xl text-white mb-3">Personal 1-on-1 Training</h3>
+                            <p class="text-textMuted text-sm leading-relaxed mb-6">Customized workout blueprints and nutrition plans supervised directly by elite certified fitness mentors.</p>
+                        </div>
+                        <a href="#contact" class="w-full py-3 rounded-xl bg-zinc-900 border border-zinc-800 text-white font-semibold text-center hover:bg-primary hover:border-primary transition-all min-h-[48px] flex items-center justify-center">
+                            Inquire Now
+                        </a>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section id="why-us" class="py-24 bg-surface/40 border-y border-zinc-800/80">
+    <section class="py-20 bg-surface/30 border-y border-zinc-800">
         <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                
-                <div>
-                    <span class="text-primary font-bold text-xs uppercase tracking-widest bg-primary/10 px-3 py-1.5 rounded-full border border-primary/20">The Global Gym Edge</span>
-                    <h2 class="font-syne font-extrabold text-3xl sm:text-5xl text-white mt-4 mb-6">Why Fitness Enthusiasts in Patna Choose Us</h2>
-                    <p class="text-textMuted text-base mb-8 leading-relaxed">We don't just provide equipment; we cultivate a passionate community dedicated to discipline, sweat, and relentless self-improvement.</p>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shrink-0 mt-1">
-                                <i data-lucide="check" class="w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-syne font-bold text-lg text-white mb-1">Immaculate Cleanliness & Hygiene</h4>
-                                <p class="text-textMuted text-sm">Equipment is sanitized multiple times daily, ensuring a fresh and safe workout environment.</p>
-                            </div>
-                        </div>
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-primary font-semibold text-sm tracking-wider uppercase mb-3 block">Why Global Gym</span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white mb-4">Built Different. Built Better.</h2>
+                <p class="text-textMuted text-base sm:text-lg">Discover why 756+ fitness enthusiasts in Patna choose Global Gym as their second home.</p>
+            </div>
 
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shrink-0 mt-1">
-                                <i data-lucide="check" class="w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-syne font-bold text-lg text-white mb-1">Prime & Accessible Location</h4>
-                                <p class="text-textMuted text-sm">Conveniently situated near Shiv-Kali Mandir on Bazaar Samiti Road, Bahadurpur with easy commute.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shrink-0 mt-1">
-                                <i data-lucide="check" class="w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-syne font-bold text-lg text-white mb-1">Unmatched Energy & Community</h4>
-                                <p class="text-textMuted text-sm">Train alongside motivated peers and supportive trainers who push you past your limits.</p>
-                            </div>
-                        </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Feature 1 -->
+                <div class="p-6 rounded-2xl bg-surface border border-zinc-800 hover:border-primary/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
                     </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-2">Top-Tier Equipment</h3>
+                    <p class="text-textMuted text-sm leading-relaxed">Immaculate, heavy-duty commercial machines maintained daily for safe, effective workouts.</p>
                 </div>
 
-                <!-- Visual Card Box -->
-                <div class="relative">
-                    <div class="relative rounded-2xl overflow-hidden border border-zinc-800 aspect-[4/3] shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1000&q=80" alt="Gym weights" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-transparent to-transparent"></div>
+                <!-- Feature 2 -->
+                <div class="p-6 rounded-2xl bg-surface border border-zinc-800 hover:border-primary/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center mb-4">
+                        <i data-lucide="flame" class="w-6 h-6"></i>
                     </div>
-                    <div class="absolute -bottom-6 -left-6 bg-surface p-6 rounded-2xl border border-zinc-800 shadow-2xl max-w-xs hidden sm:block">
-                        <div class="flex items-center gap-3 mb-2">
-                            <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold">4.5</div>
-                            <div>
-                                <div class="text-sm font-bold text-white">Top Rated Gym</div>
-                                <div class="text-xs text-textMuted">Over 756+ Google Reviews</div>
-                            </div>
-                        </div>
-                        <p class="text-xs text-textMuted">"Best gym environment in Bahadurpur with professional trainers."</p>
-                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-2">High-Energy Vibe</h3>
+                    <p class="text-textMuted text-sm leading-relaxed">An inspiring atmosphere packed with motivated members pushing their absolute limits.</p>
                 </div>
 
+                <!-- Feature 3 -->
+                <div class="p-6 rounded-2xl bg-surface border border-zinc-800 hover:border-primary/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center mb-4">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-2">Spotless Hygiene</h3>
+                    <p class="text-textMuted text-sm leading-relaxed">Regular sanitization of floors, weights, and equipment ensuring a pristine workout environment.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="p-6 rounded-2xl bg-surface border border-zinc-800 hover:border-primary/50 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center mb-4">
+                        <i data-lucide="clock" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-white mb-2">Flexible Hours</h3>
+                    <p class="text-textMuted text-sm leading-relaxed">Open from early morning 5:30 AM to 9:00 PM to fit seamlessly into your busy routine.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About / Story Section -->
-    <section id="about" class="py-24">
+    <section id="about" class="py-20 lg:py-28">
         <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-surface rounded-3xl p-8 sm:p-12 border border-zinc-800 relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-                    <div>
-                        <span class="text-primary font-bold text-xs uppercase tracking-widest bg-primary/10 px-3 py-1.5 rounded-full border border-primary/20">Our Story</span>
-                        <h2 class="font-syne font-extrabold text-3xl sm:text-4xl text-white mt-4 mb-6">Empowering Patna's Fitness Journey Since Day One</h2>
-                        <p class="text-textMuted text-base mb-6 leading-relaxed">
-                            Located at Road Number 13A, Bazaar Samiti Rd, near Shiv-Kali Mandir, Bahadurpur, Patna, GLOBAL GYM has become a landmark for fitness enthusiasts across the city.
-                        </p>
-                        <p class="text-textMuted text-base mb-8 leading-relaxed">
-                            We believe fitness is not a seasonal hobby—it's a lifelong commitment. Our facility is engineered to provide premium equipment, a disciplined atmosphere, and expert guidance accessible to every dedicated individual.
-                        </p>
-                        <div class="flex items-center gap-6">
-                            <a href="tel:+919955542052" class="h-12 px-6 rounded-xl bg-primary hover:bg-primary-hover text-white font-bold text-sm flex items-center gap-2 shadow-lg shadow-primary/20 transition-all">
-                                <i data-lucide="phone" class="w-4 h-4"></i>
-                                <span>Call Us Today</span>
-                            </a>
-                            <div class="flex flex-col">
-                                <span class="text-xs text-textMuted">Have Questions?</span>
-                                <span class="text-sm font-bold text-white">+91 99555 42052</span>
-                            </div>
-                        </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="relative aspect-[4/3] rounded-3xl overflow-hidden border border-zinc-800 glow-effect">
+                        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1000&q=80" alt="Gym Interior" class="w-full h-full object-cover">
                     </div>
+                    <div class="absolute -bottom-6 -right-6 bg-surface border border-zinc-800 p-6 rounded-2xl shadow-2xl hidden sm:block max-w-xs">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="flex text-amber-400">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <span class="font-bold text-white">4.5 / 5.0</span>
+                        </div>
+                        <p class="text-xs text-textMuted">"Best gym in Bahadurpur area with incredible trainers and equipment."</p>
+                    </div>
+                </div>
 
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="space-y-4">
-                            <div class="rounded-2xl overflow-hidden aspect-[4/3] border border-zinc-800">
-                                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Gym workout" class="w-full h-full object-cover">
-                            </div>
-                            <div class="rounded-2xl overflow-hidden aspect-square border border-zinc-800 bg-primary/20 flex flex-col items-center justify-center p-6 text-center">
-                                <span class="font-syne font-black text-4xl text-white mb-1">756+</span>
-                                <span class="text-xs text-textMuted uppercase tracking-wider font-semibold">Verified Reviews</span>
-                            </div>
-                        </div>
-                        <div class="space-y-4 pt-8">
-                            <div class="rounded-2xl overflow-hidden aspect-square border border-zinc-800 bg-secondary/20 flex flex-col items-center justify-center p-6 text-center">
-                                <span class="font-syne font-black text-4xl text-white mb-1">5:30 AM</span>
-                                <span class="text-xs text-textMuted uppercase tracking-wider font-semibold">Daily Opening</span>
-                            </div>
-                            <div class="rounded-2xl overflow-hidden aspect-[4/3] border border-zinc-800">
-                                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Gym facility" class="w-full h-full object-cover">
-                            </div>
-                        </div>
+                <div class="flex flex-col justify-center">
+                    <span class="text-primary font-semibold text-sm tracking-wider uppercase mb-3">Our Story & Presence</span>
+                    <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white mb-6 leading-tight">Empowering Patna's Fitness Journey Since Day One</h2>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed mb-6">
+                        Located conveniently near Shiv-Kali Mandir on Bazaar Samiti Rd, Bahadurpur, Patna, <strong class="text-white">GLOBAL GYM</strong> is more than just a fitness center—it's a brotherhood of dedication, hard work, and transformation.
+                    </p>
+                    <p class="text-textMuted text-base sm:text-lg leading-relaxed mb-8">
+                        We believe that everyone deserves access to professional-grade equipment and expert guidance without compromise. Whether you are stepping into a gym for the first time or prepping for a bodybuilding stage, our doors are open for you.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="px-6 py-3.5 rounded-xl bg-primary hover:bg-primary-hover text-white font-bold text-sm transition-all min-h-[48px] flex items-center justify-center">
+                            Visit Today
+                        </a>
+                        <a href="tel:+919955542052" class="px-6 py-3.5 rounded-xl bg-surface border border-zinc-800 hover:border-primary text-white font-bold text-sm transition-all min-h-[48px] flex items-center justify-center">
+                            Call Us Now
+                        </a>
                     </div>
                 </div>
             </div>
@@ -409,356 +369,364 @@
     </section>
 
     <!-- Interactive Showcase / Gallery -->
-    <section id="gallery" class="py-24 bg-surface/30 border-y border-zinc-800/80">
+    <section id="gallery" class="py-20 bg-surface/30 border-y border-zinc-800">
         <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-primary font-bold text-xs uppercase tracking-widest bg-primary/10 px-3 py-1.5 rounded-full border border-primary/20">Gym Showcase</span>
-                <h2 class="font-syne font-extrabold text-3xl sm:text-5xl text-white mt-4 mb-4">Inside GLOBAL GYM</h2>
-                <p class="text-textMuted text-base sm:text-lg">Take a virtual tour of our spacious, fully-equipped facility in Bahadurpur, Patna.</p>
+                <span class="text-primary font-semibold text-sm tracking-wider uppercase mb-3 block">Gym Showcase</span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white mb-4">Inside Global Gym Patna</h2>
+                <p class="text-textMuted text-base sm:text-lg">Take a visual tour of our expansive floor, heavy racks, and cardio zone.</p>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="rounded-2xl overflow-hidden aspect-square border border-zinc-800 group">
-                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Gym floor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative aspect-video rounded-2xl overflow-hidden border border-zinc-800 group">
+                    <img src="https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?auto=format&fit=crop&w=800&q=80" alt="Gym Floor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="font-heading font-bold text-white text-lg">Main Weight Floor</span>
+                    </div>
                 </div>
-                <div class="rounded-2xl overflow-hidden aspect-square border border-zinc-800 group">
-                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" alt="Dumbbells rack" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="relative aspect-video rounded-2xl overflow-hidden border border-zinc-800 group">
+                    <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Dumbbell Rack" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="font-heading font-bold text-white text-lg">Pro Dumbbell Rack</span>
+                    </div>
                 </div>
-                <div class="rounded-2xl overflow-hidden aspect-square border border-zinc-800 group">
-                    <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=600&q=80" alt="Weight training" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="rounded-2xl overflow-hidden aspect-square border border-zinc-800 group">
-                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Fitness workout" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="relative aspect-video rounded-2xl overflow-hidden border border-zinc-800 group">
+                    <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=800&q=80" alt="Workout Session" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="font-heading font-bold text-white text-lg">Functional Training Area</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Customer Reviews Section -->
-    <section id="reviews" class="py-24">
+    <section id="reviews" class="py-20 lg:py-28">
         <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-primary font-bold text-xs uppercase tracking-widest bg-primary/10 px-3 py-1.5 rounded-full border border-primary/20">Verified Testimonials</span>
-                <h2 class="font-syne font-extrabold text-3xl sm:text-5xl text-white mt-4 mb-4">Loved By 756+ Members</h2>
-                <p class="text-textMuted text-base sm:text-lg">Read real feedback from our dedicated community members on Google.</p>
+                <span class="text-primary font-semibold text-sm tracking-wider uppercase mb-3 block">Testimonials</span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white mb-4">Loved By 756+ Members</h2>
+                <p class="text-textMuted text-base sm:text-lg">Read what real members have to say about their experience at Global Gym Patna.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
                 <!-- Review 1 -->
-                <div class="bg-surface rounded-2xl p-8 border border-zinc-800 flex flex-col justify-between shadow-xl">
+                <div class="p-8 rounded-2xl bg-surface border border-zinc-800 flex flex-col justify-between">
                     <div>
-                        <div class="flex text-secondary mb-4">
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
+                        <div class="flex text-amber-400 mb-4">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         </div>
-                        <p class="text-textMuted text-sm leading-relaxed mb-6">"Best gym in Bahadurpur area! Excellent equipment, very spacious, and trainers are extremely helpful with proper form correction. Highly recommended!"</p>
+                        <p class="text-textMuted text-sm sm:text-base leading-relaxed mb-6">"Best gym in Bahadurpur Patna! Amazing equipment, great atmosphere, and the trainers are very knowledgeable and supportive. Highly recommended!"</p>
                     </div>
-                    <div class="flex items-center gap-3 pt-4 border-t border-zinc-800/80">
-                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">AK</div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-primary/20 text-primary font-heading font-bold flex items-center justify-center">
+                            RK
+                        </div>
                         <div>
-                            <div class="font-syne font-bold text-sm text-white">Abhishek Kumar</div>
-                            <div class="text-xs text-textMuted">Google Reviewer</div>
+                            <h4 class="font-heading font-bold text-white text-sm">Rahul Kumar</h4>
+                            <span class="text-xs text-textMuted">Google Local Guide</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Review 2 -->
-                <div class="bg-surface rounded-2xl p-8 border border-zinc-800 flex flex-col justify-between shadow-xl">
+                <div class="p-8 rounded-2xl bg-surface border border-zinc-800 flex flex-col justify-between">
                     <div>
-                        <div class="flex text-secondary mb-4">
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
+                        <div class="flex text-amber-400 mb-4">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         </div>
-                        <p class="text-textMuted text-sm leading-relaxed mb-6">"Great atmosphere and top-notch machines. The crowd is very disciplined and focused. Perfect gym near Bazaar Samiti Road for serious fitness enthusiasts."</p>
+                        <p class="text-textMuted text-sm sm:text-base leading-relaxed mb-6">"Very spacious with high quality weights and machines. Located easily near Shiv-Kali Mandir. Perfect gym for both beginners and serious lifters."</p>
                     </div>
-                    <div class="flex items-center gap-3 pt-4 border-t border-zinc-800/80">
-                        <div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold">RS</div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-secondary/20 text-secondary font-heading font-bold flex items-center justify-center">
+                            AS
+                        </div>
                         <div>
-                            <div class="font-syne font-bold text-sm text-white">Rahul Singh</div>
-                            <div class="text-xs text-textMuted">Google Reviewer</div>
+                            <h4 class="font-heading font-bold text-white text-sm">Amit Singh</h4>
+                            <span class="text-xs text-textMuted">Verified Member</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Review 3 -->
-                <div class="bg-surface rounded-2xl p-8 border border-zinc-800 flex flex-col justify-between shadow-xl">
+                <div class="p-8 rounded-2xl bg-surface border border-zinc-800 flex flex-col justify-between">
                     <div>
-                        <div class="flex text-secondary mb-4">
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
+                        <div class="flex text-amber-400 mb-4">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         </div>
-                        <p class="text-textMuted text-sm leading-relaxed mb-6">"Opens early at 5:30 AM which is great for my morning routine. Trainers give proper attention and the pricing is very reasonable for the quality provided."</p>
+                        <p class="text-textMuted text-sm sm:text-base leading-relaxed mb-6">"Great vibe and very motivating crowd. Trainers pay personal attention to form and posture. Worth every rupee!"</p>
                     </div>
-                    <div class="flex items-center gap-3 pt-4 border-t border-zinc-800/80">
-                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold">MK</div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-500 font-heading font-bold flex items-center justify-center">
+                            PS
+                        </div>
                         <div>
-                            <div class="font-syne font-bold text-sm text-white">Manish Kumar</div>
-                            <div class="text-xs text-textMuted">Google Reviewer</div>
+                            <h4 class="font-heading font-bold text-white text-sm">Priya Sharma</h4>
+                            <span class="text-xs text-textMuted">Verified Member</span>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- FAQ Accordion -->
-    <section id="faq" class="py-24 bg-surface/40 border-y border-zinc-800/80">
+    <section id="faq" class="py-20 bg-surface/30 border-y border-zinc-800">
         <div class="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="text-primary font-bold text-xs uppercase tracking-widest bg-primary/10 px-3 py-1.5 rounded-full border border-primary/20">Got Questions?</span>
-                <h2 class="font-syne font-extrabold text-3xl sm:text-5xl text-white mt-4 mb-4">Frequently Asked Questions</h2>
-                <p class="text-textMuted text-base">Everything you need to know about memberships, timings, and facilities.</p>
+                <span class="text-primary font-semibold text-sm tracking-wider uppercase mb-3 block">Got Questions?</span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white mb-4">Frequently Asked Questions</h2>
+                <p class="text-textMuted text-base sm:text-lg">Everything you need to know about joining Global Gym Patna.</p>
             </div>
 
             <div class="space-y-4">
-                
                 <!-- FAQ Item 1 -->
-                <div class="bg-surface rounded-2xl border border-zinc-800 overflow-hidden">
-                    <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
-                        <span class="font-syne font-bold text-base sm:text-lg text-white">What are the opening and closing hours of Global Gym?</span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-primary shrink-0 transition-transform duration-300"></i>
+                <div class="bg-surface border border-zinc-800 rounded-2xl overflow-hidden">
+                    <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-lg text-white hover:text-primary transition-colors">
+                        <span>What are the opening and closing hours of Global Gym?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
                     </button>
-                    <div class="faq-content hidden px-6 pb-6 text-textMuted text-sm leading-relaxed">
-                        Global Gym is open from 5:30 AM to 9:00 PM, giving you plenty of flexibility for early morning or evening workouts.
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-6 text-textMuted text-sm sm:text-base leading-relaxed">
+                        <p class="pb-6">Global Gym is open every day from 5:30 AM to 9:00 PM, giving you plenty of flexibility for early morning or evening workouts.</p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 2 -->
-                <div class="bg-surface rounded-2xl border border-zinc-800 overflow-hidden">
-                    <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
-                        <span class="font-syne font-bold text-base sm:text-lg text-white">Where is Global Gym located in Patna?</span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-primary shrink-0 transition-transform duration-300"></i>
+                <div class="bg-surface border border-zinc-800 rounded-2xl overflow-hidden">
+                    <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-lg text-white hover:text-primary transition-colors">
+                        <span>Do you offer a free trial workout session?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
                     </button>
-                    <div class="faq-content hidden px-6 pb-6 text-textMuted text-sm leading-relaxed">
-                        We are conveniently located at Road Number 13A, Bazaar Samiti Rd, near Shiv-Kali Mandir, Bahadurpur, Patna, Bihar 800016.
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-6 text-textMuted text-sm sm:text-base leading-relaxed">
+                        <p class="pb-6">Yes! You can claim a free trial session by filling out our trial booking form on this website or contacting us directly via WhatsApp.</p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 3 -->
-                <div class="bg-surface rounded-2xl border border-zinc-800 overflow-hidden">
-                    <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
-                        <span class="font-syne font-bold text-base sm:text-lg text-white">Do you provide personal trainers for beginners?</span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-primary shrink-0 transition-transform duration-300"></i>
+                <div class="bg-surface border border-zinc-800 rounded-2xl overflow-hidden">
+                    <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-lg text-white hover:text-primary transition-colors">
+                        <span>Where is Global Gym located in Patna?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
                     </button>
-                    <div class="faq-content hidden px-6 pb-6 text-textMuted text-sm leading-relaxed">
-                        Yes! We have certified trainers available for 1-on-1 personal training sessions, custom workout plans, and proper form guidance tailored specifically for beginners and advanced athletes alike.
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-6 text-textMuted text-sm sm:text-base leading-relaxed">
+                        <p class="pb-6">We are conveniently located at Road Number 13A, Bazaar Samiti Rd, near Shiv-Kali Mandir, Bahadurpur, Patna, Bihar 800016.</p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 4 -->
-                <div class="bg-surface rounded-2xl border border-zinc-800 overflow-hidden">
-                    <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none">
-                        <span class="font-syne font-bold text-base sm:text-lg text-white">How can I book a free trial session?</span>
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-primary shrink-0 transition-transform duration-300"></i>
+                <div class="bg-surface border border-zinc-800 rounded-2xl overflow-hidden">
+                    <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-lg text-white hover:text-primary transition-colors">
+                        <span>Are certified personal trainers available?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
                     </button>
-                    <div class="faq-content hidden px-6 pb-6 text-textMuted text-sm leading-relaxed">
-                        You can easily book a free trial by filling out our trial booking form on this website or by messaging us directly on WhatsApp at +91 99555 42052.
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-6 text-textMuted text-sm sm:text-base leading-relaxed">
+                        <p class="pb-6">Yes, we have experienced and certified personal trainers on-site to assist with customized workout plans, weight loss, and bodybuilding coaching.</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- Interactive Location & Contact Section -->
-    <section id="contact" class="py-24">
+    <section id="contact" class="py-20 lg:py-28 relative">
         <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-primary font-bold text-xs uppercase tracking-widest bg-primary/10 px-3 py-1.5 rounded-full border border-primary/20">Get In Touch</span>
-                <h2 class="font-syne font-extrabold text-3xl sm:text-5xl text-white mt-4 mb-4">Visit Or Join Today</h2>
-                <p class="text-textMuted text-base sm:text-lg">Ready to start your fitness transformation? Drop by our gym in Bahadurpur or claim your free trial below.</p>
+                <span class="text-primary font-semibold text-sm tracking-wider uppercase mb-3 block">Get In Touch</span>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-5xl text-white mb-4">Visit Or Book Your Free Trial</h2>
+                <p class="text-textMuted text-base sm:text-lg">Reach out to us directly or drop your details for a callback and free gym tour.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                
-                <!-- Trial Booking Form -->
-                <div class="bg-surface rounded-3xl p-8 sm:p-10 border border-zinc-800 shadow-2xl">
-                    <h3 class="font-syne font-bold text-2xl text-white mb-2">Claim Your Free Trial</h3>
-                    <p class="text-textMuted text-sm mb-6">Fill out the form below and our team will get in touch instantly via WhatsApp or phone.</p>
-
-                    <form id="trial-form" class="space-y-4">
-                        <div>
-                            <label class="block text-xs font-semibold text-textMuted uppercase tracking-wider mb-2">Full Name</label>
-                            <input type="text" id="name" required class="w-full h-12 bg-zinc-900 border border-zinc-800 rounded-xl px-4 text-white focus:outline-none focus:border-primary transition-colors" placeholder="Enter your full name">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-textMuted uppercase tracking-wider mb-2">Phone Number</label>
-                            <input type="tel" id="phone" required class="w-full h-12 bg-zinc-900 border border-zinc-800 rounded-xl px-4 text-white focus:outline-none focus:border-primary transition-colors" placeholder="Enter your phone number">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-textMuted uppercase tracking-wider mb-2">Interested Program</label>
-                            <select id="service" class="w-full h-12 bg-zinc-900 border border-zinc-800 rounded-xl px-4 text-white focus:outline-none focus:border-primary transition-colors">
-                                <option value="Strength Training">Strength & Muscle Training</option>
-                                <option value="Cardio & Endurance">Cardio & Endurance</option>
-                                <option value="Personal Training">1-on-1 Personal Training</option>
-                                <option value="General Inquiry">General Gym Membership</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-textMuted uppercase tracking-wider mb-2">Message / Preferred Time</label>
-                            <textarea id="message" rows="3" class="w-full bg-zinc-900 border border-zinc-800 rounded-xl p-4 text-white focus:outline-none focus:border-primary transition-colors resize-none" placeholder="Any specific questions?"></textarea>
-                        </div>
-                        <button type="submit" id="submit-btn" class="w-full h-14 bg-primary hover:bg-primary-hover text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-primary/30 transition-all hover:scale-[1.01]">
-                            <span>Submit Trial Request</span>
-                            <i data-lucide="send" class="w-4 h-4"></i>
-                        </button>
-                    </form>
-                </div>
-
-                <!-- Location & Info & Google Maps -->
-                <div class="flex flex-col justify-between space-y-8">
-                    
-                    <div class="bg-surface rounded-3xl p-8 border border-zinc-800 space-y-6">
-                        <h3 class="font-syne font-bold text-2xl text-white">Gym Details</h3>
-                        
+                <!-- Left: Contact info & Google Map -->
+                <div class="flex flex-col gap-8">
+                    <div class="bg-surface p-8 rounded-3xl border border-zinc-800 flex flex-col gap-6">
                         <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shrink-0 mt-1">
-                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            <div class="p-3 rounded-xl bg-primary/10 text-primary flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-white text-sm mb-1">Address</h4>
+                                <h3 class="font-heading font-bold text-white text-lg mb-1">Our Location</h3>
                                 <p class="text-textMuted text-sm leading-relaxed">Road Number 13A, Bazaar Samiti Rd, near Shiv-Kali Mandir, Bahadurpur, Patna, Bihar 800016</p>
                             </div>
                         </div>
 
                         <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shrink-0 mt-1">
-                                <i data-lucide="phone" class="w-5 h-5"></i>
+                            <div class="p-3 rounded-xl bg-secondary/10 text-secondary flex-shrink-0">
+                                <i data-lucide="phone" class="w-6 h-6"></i>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-white text-sm mb-1">Phone / WhatsApp</h4>
-                                <a href="tel:+919955542052" class="text-textMuted hover:text-white text-sm transition-colors">+91 99555 42052</a>
+                                <h3 class="font-heading font-bold text-white text-lg mb-1">Phone / WhatsApp</h3>
+                                <a href="tel:+919955542052" class="text-textMuted text-sm hover:text-primary transition-colors">+91 99555 42052</a>
                             </div>
                         </div>
 
                         <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary shrink-0 mt-1">
-                                <i data-lucide="clock" class="w-5 h-5"></i>
+                            <div class="p-3 rounded-xl bg-emerald-500/10 text-emerald-500 flex-shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6"></i>
                             </div>
                             <div>
-                                <h4 class="font-semibold text-white text-sm mb-1">Opening Hours</h4>
+                                <h3 class="font-heading font-bold text-white text-lg mb-1">Opening Hours</h3>
                                 <p class="text-textMuted text-sm">Monday – Sunday: 5:30 AM – 9:00 PM</p>
                             </div>
                         </div>
 
-                        <a href="https://www.google.com/maps/place/GLOBAL+GYM/data=!4m7!3m6!1s0x39ed58bfe7c89241:0xf9252b4fe2990bc6!8m2!3d25.6056043!4d85.1692507!16s%2Fg%2F11ggrqxqx5!19sChIJQZLI579Y7TkRxguZ4k8rJfk?authuser=0&hl=en&rclk=1" target="_blank" rel="noopener" class="w-full h-12 bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-white font-semibold rounded-xl flex items-center justify-center gap-2 transition-all">
-                            <i data-lucide="navigation" class="w-4 h-4 text-primary"></i>
-                            <span>Get Directions on Google Maps</span>
+                        <a href="https://www.google.com/maps/place/GLOBAL+GYM/data=!4m7!3m6!1s0x39ed58bfe7c89241:0xf9252b4fe2990bc6!8m2!3d25.6056043!4d85.1692507!16s%2Fg%2F11ggrqxqx5!19sChIJQZLI579Y7TkRxguZ4k8rJfk?authuser=0&hl=en&rclk=1" target="_blank" class="w-full py-3.5 rounded-xl bg-zinc-900 border border-zinc-800 text-white font-bold text-sm flex items-center justify-center gap-2 hover:border-primary transition-all">
+                            <i data-lucide="navigation" class="w-4 h-4 text-primary"></i> Get Directions on Google Maps
                         </a>
                     </div>
 
-                    <!-- Google Map Embed -->
-                    <div class="rounded-3xl overflow-hidden border border-zinc-800 h-64 shadow-xl">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.777083162234!2d85.1692507!3d25.6056043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58bfe7c89241%3A0xf9252b4fe2990bc6!2sGLOBAL%20GYM!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- Embedded Google Map -->
+                    <div class="w-full h-72 rounded-3xl overflow-hidden border border-zinc-800">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.7785317426176!2d85.16667577539958!3d25.605604214731818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58bfe7c89241%3A0xf9252b4fe2990bc6!2sGLOBAL%20GYM!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-
                 </div>
 
+                <!-- Right: Working Trial Booking Form -->
+                <div class="bg-surface p-8 sm:p-10 rounded-3xl border border-zinc-800 flex flex-col justify-center">
+                    <h3 class="font-heading font-bold text-2xl text-white mb-2">Claim Your Free Trial</h3>
+                    <p class="text-textMuted text-sm mb-6">Fill out the quick form below and our team will get in touch with you instantly.</p>
+
+                    <form id="trial-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-xs font-semibold text-textMuted uppercase mb-1">Your Full Name</label>
+                            <input type="text" id="name" required class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-primary transition-colors" placeholder="e.g. Rahul Sharma">
+                        </div>
+
+                        <div>
+                            <label for="phone" class="block text-xs font-semibold text-textMuted uppercase mb-1">Phone Number</label>
+                            <input type="tel" id="phone" required class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-primary transition-colors" placeholder="e.g. +91 98765 43210">
+                        </div>
+
+                        <div>
+                            <label for="service" class="block text-xs font-semibold text-textMuted uppercase mb-1">Interested Program</label>
+                            <select id="service" class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-primary transition-colors">
+                                <option value="Strength Training">Strength & Conditioning</option>
+                                <option value="Cardio & Fat Loss">Cardio & Fat Burning</option>
+                                <option value="Personal Training">Personal 1-on-1 Training</option>
+                                <option value="General Gym Membership">General Gym Membership</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-xs font-semibold text-textMuted uppercase mb-1">Message / Preferred Time (Optional)</label>
+                            <textarea id="message" rows="3" class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3.5 text-white text-sm focus:outline-none focus:border-primary transition-colors" placeholder="e.g. I want to visit tomorrow morning around 7 AM."></textarea>
+                        </div>
+
+                        <button type="submit" id="submit-btn" class="w-full py-4 rounded-xl bg-primary hover:bg-primary-hover text-white font-bold text-base glow-effect-sm transition-all flex items-center justify-center gap-2 min-h-[48px]">
+                            <span>Book Free Trial Now</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-surface border-t border-zinc-800 py-12">
-        <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-                
-                <div class="md:col-span-2 space-y-4">
-                    <a href="#" class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-syne font-black text-xl shadow-lg shadow-primary/20">
-                            G
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="font-syne font-extrabold text-xl tracking-wider text-white">GLOBAL <span class="text-primary">GYM</span></span>
-                            <span class="text-[10px] text-textMuted uppercase tracking-widest font-semibold">Patna</span>
-                        </div>
-                    </a>
-                    <p class="text-textMuted text-sm max-w-sm leading-relaxed">
-                        Patna's premier fitness destination equipped with advanced training gear and professional coaching. Located near Shiv-Kali Mandir, Bahadurpur.
-                    </p>
-                    <div class="flex items-center gap-3 text-secondary">
-                        <i data-lucide="star" class="w-4 h-4 fill-secondary"></i>
-                        <span class="text-sm font-bold text-white">4.5 Rating (756+ Google Reviews)</span>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="font-syne font-bold text-white mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-sm text-textMuted">
-                        <li><a href="#services" class="hover:text-white transition-colors">Training Programs</a></li>
-                        <li><a href="#why-us" class="hover:text-white transition-colors">Why Choose Us</a></li>
-                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
-                        <li><a href="#reviews" class="hover:text-white transition-colors">Google Reviews</a></li>
-                        <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="font-syne font-bold text-white mb-4">Contact Info</h4>
-                    <ul class="space-y-3 text-sm text-textMuted">
-                        <li class="flex items-start gap-2">
-                            <i data-lucide="map-pin" class="w-4 h-4 text-primary shrink-0 mt-1"></i>
-                            <span>Road Number 13A, Bazaar Samiti Rd, Bahadurpur, Patna, Bihar 800016</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i data-lucide="phone" class="w-4 h-4 text-primary shrink-0"></i>
-                            <a href="tel:+919955542052" class="hover:text-white transition-colors">+91 99555 42052</a>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i data-lucide="clock" class="w-4 h-4 text-primary shrink-0"></i>
-                            <span>5:30 AM – 9:00 PM (Daily)</span>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="border-t border-zinc-800 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-textMuted">
-                <p>&copy; <span id="current-year"></span> GLOBAL GYM Patna. All rights reserved.</p>
-                <p class="mt-4 sm:mt-0">Designed for peak performance & fitness transformation.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Sticky Mobile Action Bar -->
-    <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-lg border-t border-zinc-800 p-3 flex items-center gap-3">
-        <a href="tel:+919955542052" class="flex-1 h-12 rounded-xl border border-zinc-800 bg-zinc-900 text-white font-bold flex items-center justify-center gap-2 text-sm shadow-md">
-            <i data-lucide="phone" class="w-4 h-4 text-primary"></i>
-            <span>Call Now</span>
-        </a>
-        <a href="https://wa.me/919955542052?text=Hi%20Global%20Gym,%20I%20want%20to%20book%20a%20free%20trial." target="_blank" rel="noopener" class="flex-1 h-12 rounded-xl bg-primary text-white font-bold flex items-center justify-center gap-2 text-sm shadow-lg shadow-primary/30">
-            <i data-lucide="message-square" class="w-4 h-4"></i>
-            <span>WhatsApp</span>
-        </a>
-    </div>
-
     <!-- Success Modal Popup -->
-    <div id="success-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="bg-surface border border-zinc-800 rounded-3xl p-8 max-w-md w-full text-center space-y-4 shadow-2xl animate-in fade-in zoom-in duration-300">
-            <div class="w-16 h-16 bg-emerald-500/20 border border-emerald-500/30 rounded-full flex items-center justify-center text-emerald-400 mx-auto">
-                <i data-lucide="check" class="w-8 h-8"></i>
+    <div id="success-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
+        <div class="bg-surface border border-zinc-800 rounded-3xl p-8 max-w-md w-full text-center relative transform scale-95 transition-transform duration-300">
+            <div class="w-16 h-16 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center mx-auto mb-6">
+                <i data-lucide="check-circle" class="w-10 h-10"></i>
             </div>
-            <h3 class="font-syne font-bold text-2xl text-white">Trial Request Received!</h3>
-            <p class="text-textMuted text-sm">Thank you! Our fitness expert at Global Gym Patna will contact you shortly via WhatsApp or call to confirm your trial session.</p>
-            <button id="close-modal" class="w-full h-12 bg-primary hover:bg-primary-hover text-white font-bold rounded-xl transition-all">
+            <h3 class="font-heading font-bold text-2xl text-white mb-2">Trial Booked Successfully!</h3>
+            <p class="text-textMuted text-sm mb-8">Thank you for reaching out to Global Gym Patna. Our team has received your request and will call you shortly to confirm your session.</p>
+            <button id="close-modal" class="w-full py-3.5 rounded-xl bg-primary text-white font-bold text-sm">
                 Got It, Thanks!
             </button>
         </div>
     </div>
 
-    <!-- JavaScript Interactivity -->
+    <!-- Sticky Mobile Action Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#0B0F19]/95 backdrop-blur-lg border-t border-zinc-800 p-3 flex gap-3">
+        <a href="tel:+919955542052" class="flex-1 py-3 rounded-xl bg-primary text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg">
+            <i data-lucide="phone" class="w-4 h-4"></i> Call Now
+        </a>
+        <a href="https://wa.me/919955542052?text=Hi,%20I%20want%20to%20claim%20my%20free%20trial%20at%20Global%20Gym%20Patna." target="_blank" class="flex-1 py-3 rounded-xl bg-emerald-600 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-zinc-800 py-16">
+        <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+            <!-- Col 1 -->
+            <div class="flex flex-col gap-4">
+                <a href="#" class="flex items-center gap-2">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center font-heading font-extrabold text-xl text-white">
+                        GG
+                    </div>
+                    <span class="font-heading font-extrabold text-2xl text-white">GLOBAL <span class="text-primary">GYM</span></span>
+                </a>
+                <p class="text-textMuted text-sm leading-relaxed">
+                    Patna's premier fitness destination equipped with advanced gear, expert trainers, and an unstoppable community.
+                </p>
+            </div>
+
+            <!-- Col 2 -->
+            <div>
+                <h4 class="font-heading font-bold text-white text-lg mb-4">Quick Links</h4>
+                <ul class="space-y-2.5 text-sm text-textMuted">
+                    <li><a href="#services" class="hover:text-white transition-colors">Programs</a></li>
+                    <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#gallery" class="hover:text-white transition-colors">Gallery</a></li>
+                    <li><a href="#reviews" class="hover:text-white transition-colors">Reviews</a></li>
+                    <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3 -->
+            <div>
+                <h4 class="font-heading font-bold text-white text-lg mb-4">Programs</h4>
+                <ul class="space-y-2.5 text-sm text-textMuted">
+                    <li><a href="#services" class="hover:text-white transition-colors">Strength & Conditioning</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Cardio & Fat Burning</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Personal Training</a></li>
+                    <li><a href="#contact" class="hover:text-white transition-colors">Free Trial Session</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4 -->
+            <div>
+                <h4 class="font-heading font-bold text-white text-lg mb-4">Contact Info</h4>
+                <ul class="space-y-3 text-sm text-textMuted">
+                    <li class="flex items-start gap-2">
+                        <i data-lucide="map-pin" class="w-4 h-4 text-primary flex-shrink-0 mt-1"></i>
+                        <span>Road Number 13A, Bazaar Samiti Rd, near Shiv-Kali Mandir, Bahadurpur, Patna, Bihar 800016</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i data-lucide="phone" class="w-4 h-4 text-primary flex-shrink-0"></i>
+                        <a href="tel:+919955542052" class="hover:text-white">+91 99555 42052</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i data-lucide="clock" class="w-4 h-4 text-primary flex-shrink-0"></i>
+                        <span>Open Daily: 5:30 AM – 9:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-zinc-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-textMuted">
+            <p>&copy; <span id="current-year"></span> GLOBAL GYM Patna. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="https://www.google.com/maps/place/GLOBAL+GYM/data=!4m7!3m6!1s0x39ed58bfe7c89241:0xf9252b4fe2990bc6!8m2!3d25.6056043!4d85.1692507!16s%2Fg%2F11ggrqxqx5!19sChIJQZLI579Y7TkRxguZ4k8rJfk?authuser=0&hl=en&rclk=1" target="_blank" class="hover:text-white transition-colors">Google Maps Profile</a>
+                <a href="https://wa.me/919955542052" target="_blank" class="hover:text-white transition-colors">WhatsApp Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interactions -->
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
@@ -766,72 +734,94 @@
         // Set Current Year in Footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
 
-        // Mobile Menu Toggle
+        // Mobile Hamburger Menu Toggle
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        function toggleMobileMenu() {
+            const isOpen = mobileMenu.classList.contains('translate-y-0');
+            if (isOpen) {
+                mobileMenu.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+                mobileMenu.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+            } else {
+                mobileMenu.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+                mobileMenu.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+            }
+        }
+
+        menuToggle.addEventListener('click', toggleMobileMenu);
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', toggleMobileMenu);
         });
 
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // FAQ Accordion
-        const faqBtns = document.querySelectorAll('.faq-btn');
-        faqBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const content = btn.nextElementSibling;
-                const icon = btn.querySelector('i');
+        // FAQ Accordion Functionality
+        const faqButtons = document.querySelectorAll('.faq-btn');
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('lucide-icon, svg');
                 
-                // Toggle current
-                content.classList.toggle('hidden');
-                icon.classList.toggle('rotate-180');
-
-                // Close others
-                faqBtns.forEach(otherBtn => {
-                    if (otherBtn !== btn) {
-                        otherBtn.nextElementSibling.classList.add('hidden');
-                        otherBtn.querySelector('i').classList.remove('rotate-180');
-                    }
+                // Toggle current accordion
+                const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+                
+                // Close all other accordions
+                faqButtons.forEach(btn => {
+                    const otherContent = btn.nextElementSibling;
+                    const otherIcon = btn.querySelector('lucide-icon, svg');
+                    otherContent.style.maxHeight = null;
+                    if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
                 });
+
+                if (!isOpen) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    if (icon) icon.style.transform = 'rotate(180deg)';
+                } else {
+                    content.style.maxHeight = null;
+                    if (icon) icon.style.transform = 'rotate(0deg)';
+                }
             });
         });
 
-        // Trial Form Submission & Success Modal
+        // Trial Booking Form & Success Modal
         const trialForm = document.getElementById('trial-form');
+        const submitBtn = document.getElementById('submit-btn');
         const successModal = document.getElementById('success-modal');
         const closeModal = document.getElementById('close-modal');
-        const submitBtn = document.getElementById('submit-btn');
 
         trialForm.addEventListener('submit', (e) => {
             e.preventDefault();
             
             // Show loading state
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = `<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i><span>Sending Request...</span>`;
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = `<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i> Submitting...`;
             lucide.createIcons();
             submitBtn.disabled = true;
 
             setTimeout(() => {
-                submitBtn.innerHTML = originalText;
+                submitBtn.innerHTML = originalBtnText;
                 submitBtn.disabled = false;
-                successModal.classList.remove('hidden');
+                lucide.createIcons();
+
+                // Show Success Modal
+                successModal.classList.remove('opacity-0', 'pointer-events-none');
+                successModal.querySelector('div').classList.remove('scale-95');
+                successModal.querySelector('div').classList.add('scale-100');
+                
                 trialForm.reset();
-            }, 1000);
+            }, 1200);
         });
 
         closeModal.addEventListener('click', () => {
-            successModal.classList.add('hidden');
+            successModal.classList.add('opacity-0', 'pointer-events-none');
+            successModal.querySelector('div').classList.remove('scale-100');
+            successModal.querySelector('div').classList.add('scale-95');
         });
 
+        // Close modal on background click
         successModal.addEventListener('click', (e) => {
             if (e.target === successModal) {
-                successModal.classList.add('hidden');
+                closeModal.click();
             }
         });
     </script>
